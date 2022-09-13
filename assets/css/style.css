@@ -26,6 +26,7 @@ body{
   padding: 10px 10px;
   background-color: white;
   border-radius: 20px;
+  margin: 0 15px;
 }
 
 /* header */
@@ -70,28 +71,52 @@ header ul a:hover{
 header .top > .link-button{
   font-size: 12px;
   font-weight: 700;
+  margin: 0;
 }
 
 /* sezione con immagine di background */
 main .background{
-  background-color: rgb(112, 112, 255);
-  /* eliminare altezza */
-  height: 300px;
+  background-image: url("../img/jumbo.png");
+  min-height: 700px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .background .titolo{
   text-align: center;
 }
 
-.background .titolo p{
-  display: inline-block;
-  margin-bottom: 20px;
-  max-width: 500px;
+.background .titolo h1,
+.background .titolo{
+  color: white;
 }
 
 .background .titolo h1{
-  padding: 40px 0 20px 0;
-  font-size: 40px;
+  padding: 100px 0 20px 0;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.background .titolo p{
+  display: inline-block;
+  margin-bottom: 20px;
+  max-width: 70%;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7rem;
+  margin-bottom: 40px;
+}
+
+.background .titolo .download > a{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+
+.background .titolo .download .link-button.other{
+  background-color: #23272a;
+  color: white;
 }
 
 /* prima immagine a sinistra titolo e scritta a destra */
