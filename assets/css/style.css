@@ -5,7 +5,8 @@
 }
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7rem;
 }
 
 .debug{
@@ -77,9 +78,10 @@ header .top > .link-button{
 /* sezione con immagine di background */
 main .background{
   background-image: url("../img/jumbo.png");
-  min-height: 700px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  min-height: 400px;
+  background-position: center;
 }
 
 .background .titolo{
@@ -101,9 +103,8 @@ main .background{
   display: inline-block;
   margin-bottom: 20px;
   max-width: 70%;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.7rem;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 40px;
 }
 
@@ -122,39 +123,52 @@ main .background{
 /* prima immagine a sinistra titolo e scritta a destra */
 .first{
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.first .img-left{
-  /* dimensioni da eliminare */
-  width: 250px;
-  height: 200px;
-  background-color: brown;
+main .first img{
+  max-height: 400px;
+  padding: 40px;
 }
 
-.first .wr-rigt{
-  width: 250px;
-  height: 200px;
+main .first .wr-rigt{
+  padding: 58px 0;
+  min-width: 100px;
+}
+
+main .first .wr-rigt h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+main .first .wr-rigt p{
+  font-size: 14px;
 }
 
 /* seconda immagine a destra, titolo e scritta a sinistra */
 .second{
-  background-color: lightgray;
   display: flex;
   justify-content: space-between;
 }
 
-.second .img2-right{
-  /* dimensioni da eliminare */
-  width: 250px;
-  height: 200px;
-  background-color: brown;
+main .second img{
+  max-height: 400px;
+  padding: 40px;
 }
 
-.second .wr2-left{
-  width: 250px;
-  height: 200px;
+main .second .wr2-left h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 2.5rem;
+  font-weight: 700;
 }
+
+main .second .wr2-left p{
+  font-size: 14px;
+}
+
 
 /* terza immagine a sinistra, titolo e scritta a destra */
 .third{
