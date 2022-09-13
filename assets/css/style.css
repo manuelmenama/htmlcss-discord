@@ -136,56 +136,15 @@ main .background{
   color: white;
 }
 
-/* prima immagine a sinistra titolo e scritta a destra */
-main .first .wr-rigt{
-  padding: 58px 0;
-  min-width: 100px;
-}
-
-main .first .wr-rigt h2{
-  font-size: 30px;
-  margin-bottom: 30px;
-  line-height: 2.5rem;
-  font-weight: 700;
-}
-
-main .first .wr-rigt p{
-  font-size: 14px;
-}
-
-
-/* seconda immagine a destra, titolo e scritta a sinistra */
-.second{
-  background-color: #f6f6f6;
-}
-
-main .second .wr2-left{
-  padding: 58px 0;
-  min-width: 100px;
-}
-
-main .second .wr2-left h2{
-  font-size: 30px;
-  margin-bottom: 30px;
-  line-height: 2.5rem;
-  font-weight: 700;
-}
-
-main .second .wr2-left p{
-  font-size: 14px;
-}
-
-
-/* terza immagine a sinistra, titolo e scritta a destra */
-.third .wave:first-child{
-  transform: rotate(180deg);
-}
-
+/* prima, seconda e terza immagine e scritte*/
+main .first .wr-rigt,
+main .second .wr2-left,
 main .third .wr3-rigt{
-  padding: 50px 0;
-  min-width: 100px;
+  padding: 20px 0;
 }
 
+main .first .wr-rigt h2,
+main .second .wr2-left h2,
 main .third .wr3-rigt h2{
   font-size: 30px;
   margin-bottom: 30px;
@@ -193,14 +152,35 @@ main .third .wr3-rigt h2{
   font-weight: 700;
 }
 
-main .third .wr3-rigt p{
+main .first .wr-right p,
+main .second .wr2-left p,
+main .third .wr3-right p{
   font-size: 14px;
+  line-height: 1.5rem;
+}
+
+/* seconda immagine a destra, titolo e scritta a sinistra */
+.second{
+  background-color: #f6f6f6;
+}
+
+/* terza immagine a sinistra, titolo e scritta a destra */
+.third .wave:first-child{
+  transform: rotate(180deg);
 }
 
 /* quarta immagine, big finale */
 main .finale{
   background-color: #f6f6f6;
   padding-top: 20px;
+}
+
+main .finale .container .wr4-center h2{
+  margin-bottom: 20px;
+}
+
+main .finale .container .wr4-center p{
+  line-height: 1.5rem;
 }
 
 main .finale .container{
@@ -242,7 +222,6 @@ main .finale .container{
 }
 
 /* footer  */
-
 footer{
   background-color: #23272a;
   color: #738adc;
@@ -311,7 +290,7 @@ footer{
   text-decoration: underline;
 }
 
-/* footer con logo */
+/* footer bottom con logo */
 .footer-bottom{
   display: flex;
   align-items: center;
