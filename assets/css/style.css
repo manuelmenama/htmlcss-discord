@@ -24,7 +24,7 @@ body{
 .link-button{
   text-decoration: none;
   color: black;
-  padding: 10px 10px;
+  padding: 0px 10px;
   background-color: white;
   border-radius: 20px;
   margin: 0 15px;
@@ -108,7 +108,7 @@ main .background{
   margin-bottom: 40px;
 }
 
-.background .titolo .download > a{
+.background .titolo .download .link-button{
   font-size: 16px;
   font-weight: 600;
   padding: 15px 20px;
@@ -240,7 +240,7 @@ footer{
 .container.footer-top{
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid #738adc;
 }
 
 .footer-top .social{
@@ -279,18 +279,27 @@ footer{
   width: calc(100% / 6);
 }
 
-.container.footer-top ul{
+.container.footer-top .footer-link ul{
   list-style: none;
+}
+
+.container.footer-top .footer-link a{
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
 }
 
 .footer-bottom{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.footer-bottom .mini-logo{
-  height: 30px;
-  width: 100px;
-  background-color: white;
-  color: black;
+.footer-bottom img{
+  height: 20px;
+}
+
+.footer-bottom a{
+  font-size: 10px;
+  margin: 0;
 }
