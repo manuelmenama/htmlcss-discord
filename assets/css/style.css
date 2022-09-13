@@ -6,7 +6,6 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  line-height: 1.6rem;
 }
 
 .debug{
@@ -18,13 +17,12 @@ body{
   max-width: 1180px;
   width: 60%;
   margin: 0 auto;
-  border: 1px dashed gray;
 }
 
 .link-button{
   text-decoration: none;
   color: black;
-  padding: 0px 10px;
+  padding: 10px 10px;
   background-color: white;
   border-radius: 20px;
   margin: 0 15px;
@@ -75,6 +73,24 @@ header .top > .link-button{
   margin: 0;
 }
 
+/* main */
+section.first .container,
+section.second .container,
+section.third .container,
+section.finale .container{
+  display: flex;
+}
+
+main .first img,
+main .second img,
+main .third img{
+  max-height: 300px;
+}
+
+.wave{
+  display: block;
+}
+
 /* sezione con immagine di background */
 main .background{
   background-image: url("../img/jumbo.png");
@@ -121,16 +137,6 @@ main .background{
 }
 
 /* prima immagine a sinistra titolo e scritta a destra */
-.first{
-  display: flex;
-  align-items: flex-start;
-}
-
-main .first img{
-  max-height: 400px;
-  padding: 40px;
-}
-
 main .first .wr-rigt{
   padding: 58px 0;
   min-width: 100px;
@@ -147,15 +153,10 @@ main .first .wr-rigt p{
   font-size: 14px;
 }
 
+
 /* seconda immagine a destra, titolo e scritta a sinistra */
 .second{
-  display: flex;
-  justify-content: space-between;
-}
-
-main .second img{
-  max-height: 400px;
-  padding: 40px;
+  background-color: #f6f6f6;
 }
 
 main .second .wr2-left{
@@ -176,14 +177,8 @@ main .second .wr2-left p{
 
 
 /* terza immagine a sinistra, titolo e scritta a destra */
-.third{
-  display: flex;
-  align-items: flex-start;
-}
-
-main .third img{
-  max-height: 400px;
-  padding: 40px;
+.third .wave:first-child{
+  transform: rotate(180deg);
 }
 
 main .third .wr3-rigt{
@@ -204,9 +199,17 @@ main .third .wr3-rigt p{
 
 /* quarta immagine, big finale */
 main .finale{
-  display: flex;
+  background-color: #f6f6f6;
+  padding-top: 20px;
+}
+
+main .finale .container{
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+.finale .container img{
+  text-align: center;
+  width: 100%;
 }
 
 .finale .wr4-center{
@@ -214,18 +217,28 @@ main .finale{
 }
 
 .finale .bottom-element{
-  text-align: center;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 .finale .bottom-element h4{
   background-image: url(../img/stars.svg);
-  background-size: cover;
-  margin-bottom: 10px;
+  background-size: contain;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
 }
+
 .finale .bottom-element .link-button{
   background-color: #8ea1e1;
   color: white;
+  padding: 15px 20px;
+  border-radius: 30px;
 }
 
 /* footer  */
@@ -233,7 +246,7 @@ main .finale{
 footer{
   background-color: #23272a;
   color: #738adc;
-  padding-top: 70px;
+  padding: 50px 0;
 }
 
 /* footer top */
@@ -289,10 +302,16 @@ footer{
   font-size: 10px;
 }
 
+.container.footer-top .footer-link a:hover{
+  text-decoration: underline;
+}
+
+/* footer con logo */
 .footer-bottom{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 0;
 }
 
 .footer-bottom img{
@@ -301,5 +320,8 @@ footer{
 
 .footer-bottom a{
   font-size: 10px;
+  padding: 1;
   margin: 0;
+  color: white;
+  background-color: #738adc;
 }
