@@ -222,7 +222,6 @@ main .finale{
   background-image: url(../img/stars.svg);
   background-size: cover;
   margin-bottom: 10px;
-  max-width: 70%;
 }
 .finale .bottom-element .link-button{
   background-color: #8ea1e1;
@@ -233,13 +232,51 @@ main .finale{
 
 footer{
   background-color: #23272a;
-  color: white;
+  color: #738adc;
+  padding-top: 70px;
 }
 
+/* footer top */
 .container.footer-top{
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid gray;
+}
+
+.footer-top .social{
+  width: calc(100% / 3);
+  padding-right: 20px;
+  line-height: 2rem;
+}
+
+/* prima colonna */
+.footer-top .social h4{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.footer-top .social .language{
+  color: white;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.footer-top .social .language img{
+  height: 12px;
+  padding-right: 2px;
+}
+
+.footer-top .social .mini-icon{
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+/* colonna link */
+.footer-top .footer-link{
+  width: calc(100% / 6);
 }
 
 .container.footer-top ul{
@@ -248,7 +285,6 @@ footer{
 
 .footer-bottom{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
