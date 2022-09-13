@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.debug{
+  background-color: rgba(0, 255, 0, .25);
+  border: 1px solid black;
+}
+
+.container{
+  max-width: 1180px;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px dashed gray;
+}
+
+/* header */
+header{
+  height: 80px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header .logo{
+  height: 25px;
+  width: 90px;
+  background-color: white;
+  color: black;
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+}
+
+header ul a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+/* sezione con immagine di background */
+main .background{
+  background-color: rgb(112, 112, 255);
+  /* eliminare altezza */
+  height: 300px;
+}
+
+.background .titolo{
+  text-align: center;
+}
+
+.background .titolo p{
+  display: inline-block;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.background .titolo h1{
+  padding: 40px 0 20px 0;
+  font-size: 40px;
+}
+
+/* prima immagine a sinistra titolo e scritta a destra */
+.first{
+  display: flex;
+  justify-content: space-between;
+}
+
+.first .img-left{
+  /* dimensioni da eliminare */
+  width: 250px;
+  height: 200px;
+  background-color: brown;
+}
+
+.first .wr-rigt{
+  width: 250px;
+  height: 200px;
+}
+
+/* seconda immagine a destra, titolo e scritta a sinistra */
+.second{
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second .img2-right{
+  /* dimensioni da eliminare */
+  width: 250px;
+  height: 200px;
+  background-color: brown;
+}
+
+.second .wr2-left{
+  width: 250px;
+  height: 200px;
+}
+
+/* terza immagine a sinistra, titolo e scritta a destra */
+.third{
+  display: flex;
+  justify-content: space-between;
+}
+
+.third .img3-left{
+  /* dimensioni da eliminare */
+  width: 250px;
+  height: 200px;
+  background-color: brown;
+}
+
+.third .wr3-rigt{
+  width: 250px;
+  height: 200px;
+}
+
+/* sezione prima del footer */
+section.finale{
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finale .img-big{
+  width: 500px;
+  height: 300px;
+  background-color: tomato;
+  display: inline-block;
+}
+
+.finale p{
+  display: block;
+  max-width: 500px;
+}
+
+/* footer  */
+
+footer{
+  background-color: #23272a;
+  color: white;
+}
+
+.container.footer-top{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+}
+
+.container.footer-top ul{
+  list-style: none;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom .mini-logo{
+  height: 30px;
+  width: 100px;
+  background-color: white;
+  color: black;
+}
