@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .debug{
@@ -81,11 +81,6 @@ section.finale .container{
   display: flex;
 }
 
-main .first img,
-main .second img,
-main .third img{
-  max-height: 300px;
-}
 
 .wave{
   display: block;
@@ -137,15 +132,22 @@ main .background{
 }
 
 /* prima, seconda e terza immagine e scritte*/
+.first .container img,
+.second .container img,
+.third .container img{
+  width: 60%;
+}
+
 main .first .wr-rigt,
 main .second .wr2-left,
 main .third .wr3-rigt{
   padding: 20px 0;
+  width: 40%;
 }
 
-main .first .wr-rigt h2,
+main .first .wr-right h2,
 main .second .wr2-left h2,
-main .third .wr3-rigt h2{
+main .third .wr3-right h2{
   font-size: 30px;
   margin-bottom: 30px;
   line-height: 2.5rem;
